@@ -30,7 +30,7 @@
                         </div>
                     </div>
 
-                    <h2 class="profile__name">Krupesh Vithlani</h2>
+                    <h2 class="profile__name" id="name">Krupesh Vithlani</h2>
                     <h3 class="profile__profession">Digital Creator</h3>
 
                     <ul class="profile__social">
@@ -288,6 +288,7 @@
   function onTelegramAuth(user) {
     alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
   }
+  document.getElementById("name").innerHTML = user.first_name;
 </script>
     </body>
 </html>
